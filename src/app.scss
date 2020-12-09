@@ -1,12 +1,15 @@
 // standard color
-$first-color: #007a7d;
+$first-color: #397780;
 $second-color : #cb6598;
+$paragraph-color: #397780;
+$titles-color: #ccc37a;
 
 //standard spaces
 $first-space : 20px;
 
 //standard font sizes
-$first-font-size : 18px;
+$link-font-size : 18px;
+$paragraph-font-size : 20px;
 
 
 //regole generiche
@@ -27,6 +30,30 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+button, h1, h2, h3, h4, h5, h6, a {
+    text-transform: uppercase;
+}
+
+.first-button, .second-button {
+    outline: none;
+    border: none;
+    border-radius: $first-space / 4;
+    padding: $first-space / 2  $first-space;
+    font-size: $link-font-size;
+    color: #fff;
+    cursor: pointer;
+}
+
+.first-button {
+    background-color: $second-color;
+    color: #fff;
+}
+
+.second-button {
+    background-color: #fff;
+    color: $second-color;
 }
 
 //header
@@ -63,23 +90,36 @@ header {
 }
 
 .header-right > .header-menu > ul a {
-    text-transform: uppercase;
     padding: 0 $first-space;
-    font-size: $first-font-size;
+    font-size: $link-font-size;
     color: #fff;
 }
 
-button {
-    text-transform: uppercase;
-    background-color: $second-color;
-    outline: none;
-    border: none;
-    border-radius: $first-space / 4;
-    padding: $first-space / 2  $first-space;
-    font-size: $first-font-size;
-    color: #fff;
-    cursor: pointer;
+
+//jumbotron
+
+.jumbo-container {
+    text-align: center;
+    background-color: #4D3D45;
+    padding: $first-space * 4 0;
 }
+
+.jumbo-container > h1 {
+    font-size: 40px;
+    color: $titles-color;
+    margin: $first-space 0;
+}
+
+.jumbo-container > p {
+    font-size: $paragraph-font-size;
+    color: #fff;
+    margin: $first-space 0;
+}
+
+.jumbo-container > .jumbo-buttons > button {
+    margin: $first-space $first-space/2;
+}
+
 
 
 
