@@ -129,10 +129,10 @@ header {
 }
 
 .using-sass-left, .using-sass-right {
-    border-top: 30px solid $first-color;
-    border-bottom: 30px solid $first-color;
-    border-left: 15px solid $first-color;
-    border-right: 15px solid $first-color;
+    border-top: 10px solid $first-color;
+    border-bottom: 10px solid $first-color;
+    border-left: 5px solid $first-color;
+    border-right: 5px solid $first-color;
     padding: $first-space * 2 $first-space / 2;
 }
 
@@ -153,6 +153,30 @@ header {
     color: $section-main-color;
     margin: $first-space 0;
 }
+
+.using-sass-left button,
+.using-sass-right button {
+    display: block;
+    margin: $first-space auto;
+}
+
+//last chance
+.last-chance-container {
+    background-color: $section-main-color;
+    padding: $first-space * 2 0;
+    text-align: center;
+}
+
+.last-chance-container > h2 {
+    color: $section-secondary-color;
+    margin: $first-space 0;
+}
+
+.last-chance-container > p {
+    margin: $first-space 0;
+}
+
+// footer
 
 
 

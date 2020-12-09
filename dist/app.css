@@ -115,10 +115,10 @@ header {
 
 .using-sass-left,
 .using-sass-right {
-  border-top: 30px solid #397780;
-  border-bottom: 30px solid #397780;
-  border-left: 15px solid #397780;
-  border-right: 15px solid #397780;
+  border-top: 10px solid #397780;
+  border-bottom: 10px solid #397780;
+  border-left: 5px solid #397780;
+  border-right: 5px solid #397780;
   padding: 40px 10px;
 }
 
@@ -137,6 +137,27 @@ header {
 
 .using-sass-right > h2 {
   color: #ccc37a;
+  margin: 20px 0;
+}
+
+.using-sass-left button,
+.using-sass-right button {
+  display: block;
+  margin: 20px auto;
+}
+
+.last-chance-container {
+  background-color: #ccc37a;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.last-chance-container > h2 {
+  color: #4d3d45;
+  margin: 20px 0;
+}
+
+.last-chance-container > p {
   margin: 20px 0;
 }
 
