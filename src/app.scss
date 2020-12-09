@@ -1,0 +1,94 @@
+// standard color
+$first-color: #007a7d;
+$second-color : #cb6598;
+
+//standard spaces
+$first-space : 20px;
+
+//standard font sizes
+$first-font-size : 18px;
+
+
+//regole generiche
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+//header
+header {
+    height: 100px;
+    background-color: $first-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $first-space;
+}
+
+//header left
+.header-left > .img-container {
+    height: 54px;
+    width: 160px;
+}
+
+.header-left > .img-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+//header right
+.header-right,
+.header-right > .header-menu > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-right > .header-menu {
+    margin-right: $first-space;
+}
+
+.header-right > .header-menu > ul a {
+    text-transform: uppercase;
+    padding: 0 $first-space;
+    font-size: $first-font-size;
+    color: #fff;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: $second-color;
+    outline: none;
+    border: none;
+    border-radius: $first-space / 4;
+    padding: $first-space / 2  $first-space;
+    font-size: $first-font-size;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+//
