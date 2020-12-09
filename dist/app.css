@@ -27,6 +27,10 @@ a {
   text-transform: uppercase;
 }
 
+p {
+  color: #fff;
+}
+
 .first-button,
 .second-button {
   outline: none;
@@ -86,7 +90,7 @@ header {
 
 .jumbo-container {
   text-align: center;
-  background-color: #4D3D45;
+  background-color: #4d3d45;
   padding: 80px 0;
 }
 
@@ -98,11 +102,41 @@ header {
 
 .jumbo-container > p {
   font-size: 20px;
-  color: #fff;
   margin: 20px 0;
 }
 
 .jumbo-container > .jumbo-buttons > button {
   margin: 20px 10px;
+}
+
+.using-sass-container {
+  display: flex;
+}
+
+.using-sass-left,
+.using-sass-right {
+  border-top: 30px solid #397780;
+  border-bottom: 30px solid #397780;
+  border-left: 15px solid #397780;
+  border-right: 15px solid #397780;
+  padding: 40px 10px;
+}
+
+.using-sass-left {
+  background-color: #ccc37a;
+}
+
+.using-sass-left > h2 {
+  color: #4d3d45;
+  margin: 20px 0;
+}
+
+.using-sass-right {
+  background-color: #4d3d45;
+}
+
+.using-sass-right > h2 {
+  color: #ccc37a;
+  margin: 20px 0;
 }
 
